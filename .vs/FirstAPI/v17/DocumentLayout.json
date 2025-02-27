@@ -1,7 +1,28 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\domain\\models\\userhobbyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|solutionrelative:domain\\models\\userhobbyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4FB4BA41-3724-4DC3-8B9E-BD3951DFF5C9}|Repository\\Services.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\repository\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FB4BA41-3724-4DC3-8B9E-BD3951DFF5C9}|Repository\\Services.csproj|solutionrelative:repository\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCF5DE5-E309-41B5-87C3-62731BBFCD01}|Integration\\Integration.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\integration\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCF5DE5-E309-41B5-87C3-62731BBFCD01}|Integration\\Integration.csproj|solutionrelative:integration\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\domain\\models\\hobbyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|solutionrelative:domain\\models\\hobbyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\domain\\models\\contactentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|solutionrelative:domain\\models\\contactentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +30,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Repository\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "Repository\\Services\\UserService.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Repository\\Services\\UserService.cs",
+              "RelativeToolTip": "Repository\\Services\\UserService.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAYwCIAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T09:14:43.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Integration\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Integration\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Integration\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Integration\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAzwBoAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T09:13:03.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ContactEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\ContactEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\ContactEntity.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\ContactEntity.cs",
+              "RelativeToolTip": "Domain\\Models\\ContactEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T09:08:50.314Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HobbyEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\HobbyEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\HobbyEntity.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\HobbyEntity.cs",
+              "RelativeToolTip": "Domain\\Models\\HobbyEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T07:36:28.48Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserHobbyEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\UserHobbyEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\UserHobbyEntity.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\UserHobbyEntity.cs",
+              "RelativeToolTip": "Domain\\Models\\UserHobbyEntity.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T07:36:24.107Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"

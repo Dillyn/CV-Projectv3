@@ -13,7 +13,7 @@ namespace Integration.Repositories
             _dbContext = dbContext;
         }
 
-        public async Task<User> AddAsync(User user)
+        public async Task<UserEntity> AddAsync(UserEntity user)
         {
             try
             {
@@ -47,11 +47,11 @@ namespace Integration.Repositories
             {
 
                 // Log the error
-                throw new DatabaseException($"An error occurred while deleting {typeof(User).Name}.", ex);
+                throw new DatabaseException($"An error occurred while deleting {typeof(UserEntity).Name}.", ex);
             }
         }
 
-        public async Task<List<User>> GetAllAsync()
+        public async Task<List<UserEntity>> GetAllAsync()
         {
             try
             {
@@ -66,12 +66,12 @@ namespace Integration.Repositories
             }
         }
 
-        public async Task<User?> GetByIdAsync(int id)
+        public async Task<UserEntity?> GetByIdAsync(int id)
         {
             return await _dbContext.User.FindAsync(id);  // Find and return the user by ID
         }
 
-        public async Task<User> UpdateAsync(int id, User user)
+        public async Task<UserEntity> UpdateAsync(int id, UserEntity user)
         {
             if (user == null)
             {
@@ -103,7 +103,7 @@ namespace Integration.Repositories
         }
 
 
-        async Task<User?> IUserRepository.GetByNameAsync(string name)
+        async Task<UserEntity?> IUserRepository.GetByNameAsync(string name)
         {
             return await _dbContext.User.FirstOrDefaultAsync(u => u.Name == name);
         }

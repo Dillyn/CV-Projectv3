@@ -32,7 +32,7 @@ namespace FirstAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] Hobby hobby)
+        public IActionResult Create([FromBody] HobbyEntity hobby)
         {
             _context.Hobby.Add(hobby);
             _context.SaveChanges();
@@ -40,7 +40,7 @@ namespace FirstAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update([FromRoute] int id, [FromBody] Hobby hobby)
+        public IActionResult Update([FromRoute] int id, [FromBody] HobbyEntity hobby)
         {
             Console.WriteLine("update called");
             var existingHobby = _context.Hobby.Find(id);
@@ -65,7 +65,7 @@ namespace FirstAPI.Controllers
         [Route("{id}")]
         public IActionResult Delete([FromRoute] int id)
         {
-            Hobby hobby = _context.Hobby.Find(id);
+            HobbyEntity hobby = _context.Hobby.Find(id);
             if (hobby == null)
             {
                 return NotFound("Record was not found"); // Hobby with the given ID doesn't exist
