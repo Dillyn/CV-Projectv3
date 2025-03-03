@@ -4,6 +4,6 @@ namespace Integration.Repositories
 {
     public interface IUserRepository : IRepository<UserEntity>
     {
-        Task<UserEntity?> GetByNameAsync(string name);
+        Task<List<UserEntity?>> GetByNameAsync(string name);
     }
 }

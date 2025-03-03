@@ -40,18 +40,6 @@ namespace Services.Services
             }
         }
 
-        public async Task<UserEntity> GetByFirstLetterOfUserName(string letter)
-        {
-            try
-            {
-                return await _userRepository.GetByNameAsync(letter);
-            }
-            catch (Exception ex)
-            {
-                throw new ServiceException("An error occured while retrieving the user", ex);
-            }
-        }
-
         public Task<UserEntity> GetByFirstLetterOfUserName(char letter)
         {
             throw new NotImplementedException();

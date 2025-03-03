@@ -22,17 +22,13 @@ namespace Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("Domain.Models.Hobby", b =>
+            modelBuilder.Entity("Domain.Models.Hobby.HobbyEntity", b =>
                 {
-                    b.Property<int>("Id")
+                    b.Property<int>("Hobby_Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Content")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Hobby_Id"));
 
                     b.Property<string>("Image")
                         .IsRequired()
@@ -42,12 +38,69 @@ namespace Infrastructure.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("Id");
+                    b.HasKey("Hobby_Id");
 
                     b.ToTable("Hobby");
+
+                    b.HasData(
+                        new
+                        {
+                            Hobby_Id = 1,
+                            Image = "/online-gaming.jpg",
+                            Title = "Gaming"
+                        },
+                        new
+                        {
+                            Hobby_Id = 2,
+                            Image = "/hike.jpg",
+                            Title = "Hiking"
+                        });
                 });
 
-            modelBuilder.Entity("Domain.Models.User", b =>
+            modelBuilder.Entity("Domain.Models.Hobby.UserHobbyEntity", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("HobbyId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("HobbyId");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("UserHobbies");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Description = "Online gaming has become a major part of my life, providing a fun and exciting escape. Whether I'm teaming up with friends or challenging myself in competitive matches, gaming gives me a sense of achievement and connection.",
+                            HobbyId = 1,
+                            UserId = 1
+                        },
+                        new
+                        {
+                            Id = 2,
+                            Description = "Hiking has become my way of escaping the everyday and reconnecting with nature. Each trail offers something new—whether it’s a challenge, a breathtaking view, or a moment of peace. I’ve learned to appreciate the simple things: the fresh air, the sounds of the forest, and the satisfaction of reaching the summit.",
+                            HobbyId = 2,
+                            UserId = 1
+                        });
+                });
+
+            modelBuilder.Entity("Domain.Models.UserEntity", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -66,6 +119,14 @@ namespace Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("User");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            Name = "Dillyn",
+                            Surname = "Lakey"
+                        });
                 });
 
             modelBuilder.Entity("Domain.Models.UserI", b =>
@@ -266,6 +327,25 @@ namespace Infrastructure.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
+            modelBuilder.Entity("Domain.Models.Hobby.UserHobbyEntity", b =>
+                {
+                    b.HasOne("Domain.Models.Hobby.HobbyEntity", "Hobby")
+                        .WithMany("UserHobbies")
+                        .HasForeignKey("HobbyId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Models.UserEntity", "User")
+                        .WithMany("UserHobbies")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Hobby");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -315,6 +395,16 @@ namespace Infrastructure.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Domain.Models.Hobby.HobbyEntity", b =>
+                {
+                    b.Navigation("UserHobbies");
+                });
+
+            modelBuilder.Entity("Domain.Models.UserEntity", b =>
+                {
+                    b.Navigation("UserHobbies");
                 });
 #pragma warning restore 612, 618
         }

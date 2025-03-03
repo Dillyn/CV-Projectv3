@@ -1,4 +1,4 @@
-﻿using Domain.Models;
+﻿using Domain.Models.Hobby;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -53,7 +53,6 @@ namespace FirstAPI.Controllers
 
             // Update properties if provided
             existingHobby.Title = UpdateHobbyProperty(existingHobby.Title, hobby.Title);
-            existingHobby.Content = UpdateHobbyProperty(existingHobby.Content, hobby.Content);
             existingHobby.Image = UpdateHobbyProperty(existingHobby.Image, hobby.Image);
 
             _context.SaveChanges();
@@ -78,7 +77,7 @@ namespace FirstAPI.Controllers
             return Ok(new { Message = $"Record with ID {id} was successfully deleted.", Hobby = hobby });
         }
         //Dynamic function for mapiing over properties of put
-        private string UpdateHobbyProperty(string existingProperty, string newProperty)
+        private static string UpdateHobbyProperty(string existingProperty, string newProperty)
         {
             //if new property is not null or empty return the new value
             if (!string.IsNullOrEmpty(newProperty))

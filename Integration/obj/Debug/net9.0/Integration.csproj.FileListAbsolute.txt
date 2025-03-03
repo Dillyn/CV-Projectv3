@@ -33,6 +33,7 @@ C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Integration\obj\Debug\net9.0\Integration
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Integration\obj\Debug\net9.0\Integration.AssemblyInfoInputs.cache
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Integration\obj\Debug\net9.0\Integration.AssemblyInfo.cs
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Integration\obj\Debug\net9.0\Integration.csproj.CoreCompileInputs.cache
+C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Integration\obj\Debug\net9.0\Integration.sourcelink.json
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Integration\obj\Debug\net9.0\Integrat.B0B6ED80.Up2Date
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Integration\obj\Debug\net9.0\Integration.dll
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Integration\obj\Debug\net9.0\refint\Integration.dll

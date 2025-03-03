@@ -564,6 +564,7 @@ C:\Users\Dillyn\Desktop\C#\CV-Projectv3\FirstAPI\obj\Debug\net9.0\FirstAPI.Assem
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\FirstAPI\obj\Debug\net9.0\FirstAPI.csproj.CoreCompileInputs.cache
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\FirstAPI\obj\Debug\net9.0\FirstAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\FirstAPI\obj\Debug\net9.0\FirstAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Dillyn\Desktop\C#\CV-Projectv3\FirstAPI\obj\Debug\net9.0\FirstAPI.sourcelink.json
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\FirstAPI\obj\Debug\net9.0\scopedcss\bundle\FirstAPI.styles.css
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\FirstAPI\obj\Debug\net9.0\staticwebassets.build.json
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\FirstAPI\obj\Debug\net9.0\staticwebassets.development.json

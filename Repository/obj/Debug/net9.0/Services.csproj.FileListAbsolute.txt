@@ -37,6 +37,7 @@ C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Repository\obj\Debug\net9.0\Services.Gen
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Repository\obj\Debug\net9.0\Services.AssemblyInfoInputs.cache
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Repository\obj\Debug\net9.0\Services.AssemblyInfo.cs
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Repository\obj\Debug\net9.0\Services.csproj.CoreCompileInputs.cache
+C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Repository\obj\Debug\net9.0\Services.sourcelink.json
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Repository\obj\Debug\net9.0\Services.csproj.Up2Date
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Repository\obj\Debug\net9.0\Services.dll
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Repository\obj\Debug\net9.0\refint\Services.dll
