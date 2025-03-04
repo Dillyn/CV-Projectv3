@@ -23,16 +23,12 @@ namespace Testing.Intergration
 
             _dbContext = new ApplicationDBcontext(options);
             _dbContext.Database.EnsureCreated(); // Ensure the schema is created
-
-            // Seed data
-            SeedData();
         }
 
         // Setup method to ensure the database is clean and re-seeded before each test
         [SetUp]
         public void SetUp()
         {
-            CleanDatabase(); // Clean the database to ensure a fresh state
             SeedData(); // Seed data for each test
         }
 
@@ -151,7 +147,7 @@ namespace Testing.Intergration
         [TearDown]
         public void TearDown()
         {
-            CleanDatabase(); // Clean the database after each test
+            CleanDatabase(); // Clean the database to ensure a fresh state
         }
     }
 }

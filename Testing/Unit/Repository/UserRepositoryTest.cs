@@ -12,9 +12,9 @@ namespace Testing.Repositories
         private ApplicationDBcontext _dbContext;
         private UserRepository _userRepository;
 
-        // Set up an in-memory database before each test
-        [SetUp]
-        public void SetUp()
+        // One Time Set up an in-memory database before each test
+        [OneTimeSetUp]
+        public void OneTimeSetUp()
         {
             var options = new DbContextOptionsBuilder<ApplicationDBcontext>()
                 .UseInMemoryDatabase("TestDatabase")  // Use an in-memory database for testing
@@ -23,10 +23,13 @@ namespace Testing.Repositories
             _dbContext = new ApplicationDBcontext(options);
             _userRepository = new UserRepository(_dbContext);
 
-            // Seed data for tests
-            SeedData();
         }
-
+        //seeds data
+        [SetUp]
+        public void SetUp()
+        {
+            SeedData();     // Seed data for tests
+        }
         // Seed the data manually for testing purposes
         private void SeedData()
         {
@@ -50,7 +53,6 @@ namespace Testing.Repositories
             Assert.That(result, Is.Not.Null);
             Assert.That(result.Name, Is.EqualTo("Alice"));
             Assert.That(result.Surname, Is.EqualTo("Wonder"));
-
 
             var addedUser = await _dbContext.User.FindAsync(result.Id);
 
@@ -127,9 +129,22 @@ namespace Testing.Repositories
             Assert.That(users, Has.Some.Matches<UserEntity>(u => u.Name == "John"));
         }
 
-        // Clean up after each test (optional but good practice)
+        // Clean the database to ensure a fresh state for each test
+        private void CleanDatabase()
+        {
+            _dbContext.User.RemoveRange(_dbContext.User);
+            _dbContext.SaveChanges();
+        }
+
         [TearDown]
         public void TearDown()
+        {
+            CleanDatabase(); // Clean the database to ensure a fresh state
+        }
+
+        // Clean up after each test (optional but good practice)
+        [OneTimeTearDown]
+        public void OneTimeTearDown()
         {
             _dbContext.Database.EnsureDeleted();  // Delete the in-memory database after tests
             _dbContext.Dispose();  // Dispose of the DbContext to release resources
