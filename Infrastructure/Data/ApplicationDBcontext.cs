@@ -1,4 +1,5 @@
 ﻿using Domain.Models;
+using Domain.Models.Education;
 using Domain.Models.Hobby;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -8,8 +9,12 @@ namespace Infrastructure.Data
     public class ApplicationDBcontext : IdentityDbContext<UserI>//Inherit from IdentityDbContext
     {
         public ApplicationDBcontext(DbContextOptions dbContextOptions) : base(dbContextOptions) { }//Pass up to Db context
-        public DbSet<UserEntity> User { get; set; }// set table
-        public DbSet<HobbyEntity> Hobby { get; set; }// set table
+        public DbSet<UserEntity> User { get; set; }// set Table for UserEntity
+        public DbSet<HobbyEntity> Hobby { get; set; }// set Table for HobbyEntity
+
+        public DbSet<EducationEntity> Education { get; set; } // set Table for EducationEntity
+
+        public DbSet<UserEducationEntity> UserEducation { get; set; } // Join table for many-to-many relationship between User and Education
 
         public DbSet<UserHobbyEntity> UserHobbies { get; set; } // Join table for many-to-many relationship between User and Hobby
 
@@ -81,6 +86,23 @@ namespace Infrastructure.Data
                 .HasOne(uh => uh.Hobby)  // A UserHobby belongs to one Hobby
                 .WithMany(h => h.UserHobbies)  // A Hobby can have many UserHobbies
                 .HasForeignKey(uh => uh.HobbyId);  // HobbyId is the foreign key in UserHobby
+
+            // Configure the UserEducation entity
+            modelBuilder.Entity<UserEducationEntity>()
+                .HasKey(ue => ue.Id);  // Explicitly define the primary key for UserEducation
+
+            // Configure the relationship between UserEdcation and User
+            modelBuilder.Entity<UserEducationEntity>()
+                .HasOne(ue => ue.User)  // A UserEducation belongs to one User
+                .WithMany(u => u.UserEducations)  // A User can have many UserEducations
+                .HasForeignKey(ue => ue.UserId);  // UserId is the foreign key in UserEducation
+
+            // Configure the relationship between UserEducation and Education
+            modelBuilder.Entity<UserEducationEntity>()
+                .HasOne(ue => ue.Education)  // A UserEducation belongs to one Education
+                .WithMany(h => h.UserEducations)  // A Education can have many UserEducations
+                .HasForeignKey(ue => ue.EducationId);  // EducationId is the foreign key in UserEducation
+
         }
     }
 }

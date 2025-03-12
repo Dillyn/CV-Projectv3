@@ -234,6 +234,31 @@
   },
   "components": {
     "schemas": {
+      "EducationEntity": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "institution": {
+            "type": "string",
+            "nullable": true
+          },
+          "qualification": {
+            "type": "string",
+            "nullable": true
+          },
+          "userEducations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserEducationEntity"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "HobbyEntity": {
         "type": "object",
         "properties": {
@@ -301,6 +326,38 @@
         },
         "additionalProperties": false
       },
+      "UserEducationEntity": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/UserEntity"
+          },
+          "educationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "education": {
+            "$ref": "#/components/schemas/EducationEntity"
+          },
+          "start_date": {
+            "type": "string",
+            "nullable": true
+          },
+          "end_date": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "UserEntity": {
         "type": "object",
         "properties": {
@@ -320,6 +377,13 @@
             "type": "array",
             "items": {
               "$ref": "#/components/schemas/UserHobbyEntity"
+            },
+            "nullable": true
+          },
+          "userEducations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserEducationEntity"
             },
             "nullable": true
           }

@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using Domain.Models.Education;
 using Domain.Models.Hobby;
 
 namespace Domain.Models
@@ -12,5 +13,7 @@ namespace Domain.Models
 
         // Navigation property for related Hobbies
         public ICollection<UserHobbyEntity> UserHobbies { get; set; }
+
+        public ICollection<UserEducationEntity> UserEducations { get; set; }
     }
 }

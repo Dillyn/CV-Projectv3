@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{34860D9C-1BAF-47F2-A919-42B5CCE39F9C}|Testing\\Testing.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\testing\\unit\\repository\\userrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{34860D9C-1BAF-47F2-A919-42B5CCE39F9C}|Testing\\Testing.csproj|solutionrelative:testing\\unit\\repository\\userrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2281B02B-64D7-4D84-B363-72333665108A}|Infrastructure\\Infrastructure.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2281B02B-64D7-4D84-B363-72333665108A}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\domain\\models\\education\\educationentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|solutionrelative:domain\\models\\education\\educationentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\domain\\models\\hobby\\hobbyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|solutionrelative:domain\\models\\hobby\\hobbyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\domain\\models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|solutionrelative:domain\\models\\userentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{34860D9C-1BAF-47F2-A919-42B5CCE39F9C}|Testing\\Testing.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\testing\\intergration\\applicationdbcontexttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{34860D9C-1BAF-47F2-A919-42B5CCE39F9C}|Testing\\Testing.csproj|solutionrelative:testing\\intergration\\applicationdbcontexttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\domain\\models\\education\\usereducationentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|solutionrelative:domain\\models\\education\\usereducationentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\domain\\models\\hobby\\userhobbyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3AECFBDB-C920-48ED-8A51-16D115DBCB94}|Domain\\Domain.csproj|solutionrelative:domain\\models\\hobby\\userhobbyentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDCF5DE5-E309-41B5-87C3-62731BBFCD01}|Integration\\Integration.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\integration\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDCF5DE5-E309-41B5-87C3-62731BBFCD01}|Integration\\Integration.csproj|solutionrelative:integration\\repositories\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A03C5BC3-CE36-40EE-9106-11E967181A0A}|FirstAPI\\FirstAPI.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A03C5BC3-CE36-40EE-9106-11E967181A0A}|FirstAPI\\FirstAPI.csproj|solutionrelative:firstapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{34860D9C-1BAF-47F2-A919-42B5CCE39F9C}|Testing\\Testing.csproj|c:\\users\\dillyn\\desktop\\c#\\cv-projectv3\\testing\\unit\\repository\\userrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{34860D9C-1BAF-47F2-A919-42B5CCE39F9C}|Testing\\Testing.csproj|solutionrelative:testing\\unit\\repository\\userrepositorytest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,33 +50,128 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ApplicationDBcontext.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Infrastructure\\Data\\ApplicationDBcontext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Data\\ApplicationDBcontext.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Infrastructure\\Data\\ApplicationDBcontext.cs",
+              "RelativeToolTip": "Infrastructure\\Data\\ApplicationDBcontext.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAwwGkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T11:39:12.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UserEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\UserEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\UserEntity.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\UserEntity.cs",
+              "RelativeToolTip": "Domain\\Models\\UserEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T11:36:25.927Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserHobbyEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\Hobby\\UserHobbyEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Hobby\\UserHobbyEntity.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\Hobby\\UserHobbyEntity.cs",
+              "RelativeToolTip": "Domain\\Models\\Hobby\\UserHobbyEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T11:36:15.139Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HobbyEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\Hobby\\HobbyEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Hobby\\HobbyEntity.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\Hobby\\HobbyEntity.cs",
+              "RelativeToolTip": "Domain\\Models\\Hobby\\HobbyEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T11:34:32.069Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UserEducationEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\Education\\UserEducationEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Education\\UserEducationEntity.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\Education\\UserEducationEntity.cs",
+              "RelativeToolTip": "Domain\\Models\\Education\\UserEducationEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T11:34:21.922Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "EducationEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\Education\\EducationEntity.cs",
+              "RelativeDocumentMoniker": "Domain\\Models\\Education\\EducationEntity.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain\\Models\\Education\\EducationEntity.cs",
+              "RelativeToolTip": "Domain\\Models\\Education\\EducationEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T11:34:13.929Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\FirstAPI\\Program.cs",
+              "RelativeDocumentMoniker": "FirstAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\FirstAPI\\Program.cs",
+              "RelativeToolTip": "FirstAPI\\Program.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAGEAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T08:16:10.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Integration\\Repositories\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Integration\\Repositories\\UserRepository.cs",
+              "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Integration\\Repositories\\UserRepository.cs",
+              "RelativeToolTip": "Integration\\Repositories\\UserRepository.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAswG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T07:22:41.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ApplicationDBcontextTests.cs",
               "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Testing\\Intergration\\ApplicationDBcontextTests.cs",
               "RelativeDocumentMoniker": "Testing\\Intergration\\ApplicationDBcontextTests.cs",
               "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Testing\\Intergration\\ApplicationDBcontextTests.cs",
               "RelativeToolTip": "Testing\\Intergration\\ApplicationDBcontextTests.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAqwJEAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIQAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T09:36:54.136Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T09:36:54.136Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 9,
               "Title": "UserRepositoryTest.cs",
               "DocumentMoniker": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Testing\\Unit\\Repository\\UserRepositoryTest.cs",
               "RelativeDocumentMoniker": "Testing\\Unit\\Repository\\UserRepositoryTest.cs",
               "ToolTip": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Testing\\Unit\\Repository\\UserRepositoryTest.cs",
               "RelativeToolTip": "Testing\\Unit\\Repository\\UserRepositoryTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAHsAAAAAAAAAAAAIwIMAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T15:25:50.499Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-03T15:25:50.499Z"
             }
           ]
         }
