@@ -10,11 +10,11 @@ namespace Services.Services
     {
 
 
-        public User GetUserById(int id)
+        public UserEntity GetUserById(int id)
         {
             try
             {
-                var user = _repository.GetById<User>(id);
+                var user = _repository.GetById<UserEntity>(id);
                 if (user == null)
                 {
                     throw new UserNotFoundException($"User with ID {id} not found.");
@@ -31,11 +31,11 @@ namespace Services.Services
             }
         }
 
-        public List<User> GetAllUsers()
+        public List<UserEntity> GetAllUsers()
         {
             try
             {
-                return _repository.GetAll<User>();
+                return _repository.GetAll<UserEntity>();
             }
             catch (Exception ex)
             {
@@ -43,7 +43,7 @@ namespace Services.Services
             }
         }
 
-        public void CreateUser(User user)
+        public void CreateUser(UserEntity user)
         {
             try
             {
@@ -55,7 +55,7 @@ namespace Services.Services
             }
         }
 
-        public async Task UpdateUser(User user)
+        public async Task UpdateUser(UserEntity user)
         {
             try
             {
@@ -88,7 +88,7 @@ namespace Services.Services
         {
             try
             {
-                _repository.Delete<User>(id);
+                _repository.Delete<UserEntity>(id);
             }
             catch (Exception ex)
             {
@@ -96,7 +96,7 @@ namespace Services.Services
             }
         }
 
-        public List<User> FindUsersByFirstLetter(char letter)
+        public List<UserEntity> FindUsersByFirstLetter(char letter)
         {
             if (!char.IsLetter(letter))
             {
@@ -109,7 +109,7 @@ namespace Services.Services
 
             // Filter users by the first name starting with the given letter and retrieves them from the Database
             var filteredUsers = _repository
-                .Query<User>()                                    // returns IQueryable<User>
+                .Query<UserEntity>()                                    // returns IQueryable<User>
                 .Where(u => !string.IsNullOrEmpty(u.Name) &&      // chacks if string is not null or emty  
                      u.Name.ToLower().StartsWith(firstLetter))              // and checks if name start with firstletter
                         .ToList();

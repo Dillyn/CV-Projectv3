@@ -1,0 +1,7 @@
+{
+  "Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Domain",
+  "FirstAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\FirstAPI",
+  "Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Infrastructure",
+  "Integration, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Integration",
+  "Services, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Dillyn\\Desktop\\C#\\CV-Projectv3\\Repository"
+}

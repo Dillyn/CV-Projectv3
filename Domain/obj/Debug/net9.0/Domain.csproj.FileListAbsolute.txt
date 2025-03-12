@@ -22,6 +22,7 @@ C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Domain\obj\Debug\net9.0\Domain.Generated
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Domain\obj\Debug\net9.0\Domain.AssemblyInfoInputs.cache
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Domain\obj\Debug\net9.0\Domain.AssemblyInfo.cs
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Domain\obj\Debug\net9.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Domain\obj\Debug\net9.0\Domain.sourcelink.json
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Domain\obj\Debug\net9.0\Domain.dll
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Domain\obj\Debug\net9.0\refint\Domain.dll
 C:\Users\Dillyn\Desktop\C#\CV-Projectv3\Domain\obj\Debug\net9.0\Domain.pdb

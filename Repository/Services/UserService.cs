@@ -28,7 +28,7 @@ namespace Services.Services
             await _userRepository.DeleteAsync(id);
         }
 
-        public async Task<List<User>> GetAllAsync()
+        public async Task<List<UserEntity>> GetAllAsync()
         {
             try
             {
@@ -40,24 +40,12 @@ namespace Services.Services
             }
         }
 
-        public async Task<User> GetByFirstLetterOfUserName(string letter)
-        {
-            try
-            {
-                return await _userRepository.GetByNameAsync(letter);
-            }
-            catch (Exception ex)
-            {
-                throw new ServiceException("An error occured while retrieving the user", ex);
-            }
-        }
-
-        public Task<User> GetByFirstLetterOfUserName(char letter)
+        public Task<UserEntity> GetByFirstLetterOfUserName(char letter)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<User?> GetByIdAsync(int id)
+        public async Task<UserEntity?> GetByIdAsync(int id)
         {
             try
             {
@@ -75,12 +63,12 @@ namespace Services.Services
 
         }
 
-        public Task UpdateAsync(User entity)
+        public Task UpdateAsync(UserEntity entity)
         {
             throw new NotImplementedException();
         }
 
-        Task IServices<User>.AddAsync(User entity)
+        Task IServices<UserEntity>.AddAsync(UserEntity entity)
         {
             try
             {
@@ -94,7 +82,7 @@ namespace Services.Services
 
         }
 
-        Task<User> IServices<User>.UpdateAsync(User entity)
+        Task<UserEntity> IServices<UserEntity>.UpdateAsync(UserEntity entity)
         {
             throw new NotImplementedException();
         }

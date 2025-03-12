@@ -8,12 +8,14 @@ namespace Integration.Repositories
     public class UserRepository : IUserRepository
     {
         private readonly ApplicationDBcontext _dbContext;
+        private Task<List<UserEntity>> filteredUsers;
+
         public UserRepository(ApplicationDBcontext dbContext)
         {
             _dbContext = dbContext;
         }
 
-        public async Task<User> AddAsync(User user)
+        public async Task<UserEntity> AddAsync(UserEntity user)
         {
             try
             {
@@ -47,11 +49,11 @@ namespace Integration.Repositories
             {
 
                 // Log the error
-                throw new DatabaseException($"An error occurred while deleting {typeof(User).Name}.", ex);
+                throw new DatabaseException($"An error occurred while deleting {typeof(UserEntity).Name}.", ex);
             }
         }
 
-        public async Task<List<User>> GetAllAsync()
+        public async Task<List<UserEntity>> GetAllAsync()
         {
             try
             {
@@ -66,12 +68,17 @@ namespace Integration.Repositories
             }
         }
 
-        public async Task<User?> GetByIdAsync(int id)
+        public async Task<UserEntity?> GetByIdAsync(int id)
         {
-            return await _dbContext.User.FindAsync(id);  // Find and return the user by ID
+            try { return await _dbContext.User.FindAsync(id); }
+            catch (Exception ex)
+            {
+                throw new EntityNotFoundException($"An error occurred while retrieving the user by ID:{id}.", ex);// Find and return the user by ID
+            }
+            return await _dbContext.User.FindAsync(id);
         }
 
-        public async Task<User> UpdateAsync(int id, User user)
+        public async Task<UserEntity> UpdateAsync(int id, UserEntity user)
         {
             if (user == null)
             {
@@ -103,9 +110,19 @@ namespace Integration.Repositories
         }
 
 
-        async Task<User?> IUserRepository.GetByNameAsync(string name)
+        public async Task<List<UserEntity?>> GetByNameAsync(string name)
         {
-            return await _dbContext.User.FirstOrDefaultAsync(u => u.Name == name);
+            try
+            {
+                var filteredUsers = await _dbContext.User.Where(u => u.Name == name).ToListAsync(); // Find and return the users by Name asynchronously
+                return filteredUsers;  // Return the list of users
+            }
+            catch (Exception ex)
+            {
+                throw new EntityNotFoundException($"An error occurred while retrieving the user by name: {name}.", ex);
+            }
         }
+
+
     }
 }

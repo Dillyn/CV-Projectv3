@@ -1,4 +1,4 @@
-﻿using Domain.Models;
+﻿using Domain.Models.Hobby;
 using Infrastructure.Data;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -32,7 +32,7 @@ namespace FirstAPI.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create([FromBody] Hobby hobby)
+        public IActionResult Create([FromBody] HobbyEntity hobby)
         {
             _context.Hobby.Add(hobby);
             _context.SaveChanges();
@@ -40,7 +40,7 @@ namespace FirstAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public IActionResult Update([FromRoute] int id, [FromBody] Hobby hobby)
+        public IActionResult Update([FromRoute] int id, [FromBody] HobbyEntity hobby)
         {
             Console.WriteLine("update called");
             var existingHobby = _context.Hobby.Find(id);
@@ -53,7 +53,6 @@ namespace FirstAPI.Controllers
 
             // Update properties if provided
             existingHobby.Title = UpdateHobbyProperty(existingHobby.Title, hobby.Title);
-            existingHobby.Content = UpdateHobbyProperty(existingHobby.Content, hobby.Content);
             existingHobby.Image = UpdateHobbyProperty(existingHobby.Image, hobby.Image);
 
             _context.SaveChanges();
@@ -65,7 +64,7 @@ namespace FirstAPI.Controllers
         [Route("{id}")]
         public IActionResult Delete([FromRoute] int id)
         {
-            Hobby hobby = _context.Hobby.Find(id);
+            HobbyEntity hobby = _context.Hobby.Find(id);
             if (hobby == null)
             {
                 return NotFound("Record was not found"); // Hobby with the given ID doesn't exist
@@ -78,7 +77,7 @@ namespace FirstAPI.Controllers
             return Ok(new { Message = $"Record with ID {id} was successfully deleted.", Hobby = hobby });
         }
         //Dynamic function for mapiing over properties of put
-        private string UpdateHobbyProperty(string existingProperty, string newProperty)
+        private static string UpdateHobbyProperty(string existingProperty, string newProperty)
         {
             //if new property is not null or empty return the new value
             if (!string.IsNullOrEmpty(newProperty))

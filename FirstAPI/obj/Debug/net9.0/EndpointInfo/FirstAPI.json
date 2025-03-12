@@ -24,17 +24,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Hobby"
+                "$ref": "#/components/schemas/HobbyEntity"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Hobby"
+                "$ref": "#/components/schemas/HobbyEntity"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Hobby"
+                "$ref": "#/components/schemas/HobbyEntity"
               }
             }
           }
@@ -87,17 +87,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Hobby"
+                "$ref": "#/components/schemas/HobbyEntity"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Hobby"
+                "$ref": "#/components/schemas/HobbyEntity"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Hobby"
+                "$ref": "#/components/schemas/HobbyEntity"
               }
             }
           }
@@ -234,25 +234,51 @@
   },
   "components": {
     "schemas": {
-      "Hobby": {
+      "EducationEntity": {
         "type": "object",
         "properties": {
           "id": {
             "type": "integer",
             "format": "int32"
           },
-          "title": {
-            "pattern": "^[^ ].*[^ ]$",
+          "institution": {
             "type": "string",
             "nullable": true
           },
-          "content": {
-            "pattern": "^[^ ].*[^ ]$",
+          "qualification": {
+            "type": "string",
+            "nullable": true
+          },
+          "userEducations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserEducationEntity"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "HobbyEntity": {
+        "type": "object",
+        "properties": {
+          "hobby_Id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "title": {
             "type": "string",
             "nullable": true
           },
           "image": {
             "type": "string",
+            "nullable": true
+          },
+          "userHobbies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserHobbyEntity"
+            },
             "nullable": true
           }
         },
@@ -296,6 +322,98 @@
           "password": {
             "minLength": 1,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserEducationEntity": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/UserEntity"
+          },
+          "educationId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "education": {
+            "$ref": "#/components/schemas/EducationEntity"
+          },
+          "start_date": {
+            "type": "string",
+            "nullable": true
+          },
+          "end_date": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserEntity": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "name": {
+            "type": "string",
+            "nullable": true
+          },
+          "surname": {
+            "type": "string",
+            "nullable": true
+          },
+          "userHobbies": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserHobbyEntity"
+            },
+            "nullable": true
+          },
+          "userEducations": {
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/UserEducationEntity"
+            },
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UserHobbyEntity": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "userId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "user": {
+            "$ref": "#/components/schemas/UserEntity"
+          },
+          "hobbyId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "hobby": {
+            "$ref": "#/components/schemas/HobbyEntity"
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

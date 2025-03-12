@@ -2,8 +2,8 @@
 
 namespace Services.Services
 {
-    internal interface IUserService : IServices<User>
+    internal interface IUserService : IServices<UserEntity>
     {
-        Task<User> GetByFirstLetterOfUserName(char letter);
+        Task<UserEntity> GetByFirstLetterOfUserName(char letter);
     }
 }
